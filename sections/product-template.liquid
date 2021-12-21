@@ -142,6 +142,7 @@
         {% for tag in product.tags %}
           {% if tag contains "affiliate" %}
             {% assign isAffiliateProduct = true%}
+            {% assign productTag = tag %}
           {% endif %}
         {% endfor %}
 
@@ -211,7 +212,7 @@
                   {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
                   {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
                 >
-                  <a class="btn amazon-affiliate-button" href="{{ tag | remove: 'affiliate_' }}" target="_blank">See on Amazon</a>
+                  <a class="btn amazon-affiliate-button" href="{{ productTag | remove: 'affiliate_' }}" target="_blank">See on Amazon</a>
                 </div>
               </div>
             {% endform %}
