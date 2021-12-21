@@ -2834,7 +2834,7 @@ hr {
   line-height: 1.2;
   color: var(--color-body-text); }
 
-.product-form__cart-submit, .shopify-payment-button .shopify-payment-button__button--unbranded {
+.product-form__cart-submit, .shopify-payment-button .shopify-payment-button__button--unbranded, .amazon-affiliate-button {
   display: block;
   width: 100%;
   line-height: 1.4;
@@ -2844,6 +2844,9 @@ hr {
   margin-top: 0;
   margin-bottom: 10px;
   min-height: 44px; }
+.amazon-affiliate-button {
+    margin-bottom: 57.5px;
+  }
   .product-single--small-media .product-form__cart-submit, .product-single--small-media .shopify-payment-button .shopify-payment-button__button--unbranded, .shopify-payment-button .product-single--small-media .shopify-payment-button__button--unbranded,
   .product-single--full-media .product-form__cart-submit,
   .product-single--full-media .shopify-payment-button .shopify-payment-button__button--unbranded,
